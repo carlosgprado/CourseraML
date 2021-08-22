@@ -45,13 +45,12 @@ x = zeros(n, 1);
 %              vector should look like:
 %
 %              x = [ 0 0 0 0 1 0 0 0 ... 0 0 0 0 1 ... 0 0 0 1 0 ..];
-%
-%
 
-
-
-
-
+for i=1:length(word_indices)
+    %% For every word index, write a ONE in the specific index :)
+    idx = word_indices(i);
+    x(idx) = 1;
+end
 
 
 

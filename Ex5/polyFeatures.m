@@ -15,9 +15,11 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-
-
-
+for i=1:p
+    % Replace the p-th column with the corresponding 
+    % power or X (a column vector; mx1) 
+    X_poly(:, i) = X .^i;
+end
 
 
 % =========================================================================
